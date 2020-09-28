@@ -115,7 +115,7 @@ var options = {
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
-         }else if(beacon_id == "014339e352"){
+         }else if(beacon_id == "01433b48f5"){
          var msg = {
            "type": "text",
            "text": "ระบบได้บันทึกการตรวจจุดตรวจโซนด้านหลังบ้านพักของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
