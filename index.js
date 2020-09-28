@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycbxx7J-TT0M7Bz1Q1pnVL9xu8FlHp3aUwbV50m3ZhmtJUZhy_HU/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycbyczgM0LramDbFP79c8jDYOihPVFTmwzJQbAFwP/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,17 +108,17 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "013bb81f59"){
+          if(beacon_id == "014339e352"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจหน้า บ.เซาท์อีสต์ เอเชีย ของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "ระบบได้บันทึกการตรวจจุดตรวจโซนด้านหน้าบ้านพัก ของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
-         }else if(beacon_id == "013b4b5c5d"){
+         }else if(beacon_id == "014339e352"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดล้างรถของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "ระบบได้บันทึกการตรวจจุดตรวจโซนด้านหลังบ้านพักของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
           }; 
         reply(reToken, msg, sende_r, beacon_id);   
          }
